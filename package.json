@@ -9,7 +9,7 @@
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx"
   },
   "dependencies": {
-    "@neondatabase/serverless": "^0.9.4",
+    "@neondatabase/serverless": "^0.9.5",
     "@prisma/adapter-neon": "^6.6.0",
     "@prisma/adapter-pg": "^6.6.0",
     "@prisma/client": "^6.6.0",
