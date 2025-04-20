@@ -5,10 +5,10 @@
   "scripts": {
     
     "dev": "next dev",
-    "build": "next build && prisma generate",
-    "postinstall": "prisma generate",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext .js,.ts,.jsx,.tsx"
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.9.5",
