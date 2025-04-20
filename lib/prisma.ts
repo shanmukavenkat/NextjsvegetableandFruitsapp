@@ -1,25 +1,24 @@
+// lib/prisma.ts
 import { PrismaClient } from '@prisma/client';
 import { neonConfig } from '@neondatabase/serverless';
-import ws from 'ws';
 import { PrismaNeon } from '@prisma/adapter-neon';
+import ws from 'ws';
 
-// Set WebSocket constructor for Neon
+// Fix: Vercel doesn't support Node WebSocket by default in serverless environments
 neonConfig.webSocketConstructor = ws;
 
 const createPrismaClient = () => {
   const connectionString = process.env.DATABASE_URL;
   if (!connectionString) throw new Error('DATABASE_URL is not set');
 
-  // ✅ Compatible with Webpack: directly use neonConfig for configuration
-  const neonQuery = { connectionString, ...neonConfig };
-  const adapter = new PrismaNeon(neonQuery);
+  const adapter = new PrismaNeon({ connectionString });
   const prisma = new PrismaClient({ adapter });
 
   return prisma;
 };
 
 const globalForPrisma = globalThis as typeof globalThis & {
-  prismaGlobal?: ReturnType<typeof createPrismaClient>;
+  prismaGlobal?: PrismaClient;
 };
 
 export const prisma = globalForPrisma.prismaGlobal ?? createPrismaClient();
