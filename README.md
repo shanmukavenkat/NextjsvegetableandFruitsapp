@@ -20,6 +20,65 @@ This is a full-stack web application built with **Next.js**, **Prisma ORM**, **P
 - **Deployment**: [Vercel](https://vercel.com/)
 
 ## 📁 Folder Structure
+```
+├── app
+│   ├── api
+│   │   └── orders
+│   │       └── route.ts
+│   ├── cart
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── products
+│       └── page.tsx
+├── components.json
+├── components
+│   ├── HomeComponent.tsx
+│   ├── NavbarDemo.tsx
+│   ├── footer.tsx
+│   ├── header.tsx
+│   └── ui
+│       ├── button.tsx
+│       ├── card.tsx
+│       └── resizable-navbar.tsx
+├── hooks
+│   └── use-mounted.tsx
+├── lib
+│   ├── actions.ts
+│   ├── cart-store.ts
+│   ├── expenses.ts
+│   ├── get-orders.ts
+│   ├── orders.ts
+│   ├── place-order.ts
+│   ├── prisma.ts
+│   ├── update-order-status.ts
+│   └── utils.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── prisma
+│   ├── migrations
+│   │   ├── 20240628141429_init
+│   │   │   └── migration.sql
+│   │   ├── 20250419054418_snvs
+│   │   │   └── migration.sql
+│   │   ├── 20250419055955_add_category_to_product
+│   │   │   └── migration.sql
+│   │   ├── 20250419114843_add_order_model
+│   │   │   └── migration.sql
+│   │   ├── 20250419120246_init
+│   │   │   └── migration.sql
+│   │   └── migration_lock.toml
+│   └── schema.prisma
+├── public
+│   ├── LogoNav.png
+│   ├── next.svg
+│   └── vercel.svg
+├── tailwind.config.ts
+└── tsconfig.json
+```
 
 
 
