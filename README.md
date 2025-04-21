@@ -4,7 +4,6 @@ This is a full-stack web application built with **Next.js**, **Prisma ORM**, **P
 
 ## 🚀 Features
 
-- 🔍 Browse available vegetables and fruits
 - 🛒 Place bulk orders quickly and easily
 - 📦 Track your existing orders
 - 🔐 Admin dashboard to view/manage all orders
