@@ -10,7 +10,8 @@ This is a full-stack web application built with **Next.js**, **Prisma ORM**, **P
 - 💾 PostgreSQL database with Prisma ORM
 - ☁️ Deployed serverlessly using Vercel
 - 🎯 Built using TypeScript and modern React architecture
-- <img width="285" alt="image" src="https://github.com/user-attachments/assets/b2c86e43-0106-43c6-96e7-9a635aea1c0c" />
+- <img width="256" alt="image" src="https://github.com/user-attachments/assets/d4a5f194-6432-43b4-95c9-0386297896ef" />
+
 
 
 ## 🛠 Tech Stack
